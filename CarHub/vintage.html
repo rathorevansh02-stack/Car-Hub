@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarHub | Vintage Cars</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Styling from previous turns for category content - ensure this is in style.css or here */
+    .category-content {
+      padding: 120px 60px 80px;
+      min-height: 90vh;
+      text-align: center;
+    }
+    .category-content h2 {
+      font-size: 40px;
+      color: #e50914;
+      margin-bottom: 20px;
+    }
+    .category-content p {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    /* Grid layout for car listings */
+    .vintage-car-listings {
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+      gap: 40px; 
+      text-align: left;
+    }
+
+    /* Card styling */
+    .car-detail-card {
+      background: #1a1a1a; 
+      padding: 20px; 
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: block; /* Make the anchor element fill the card */
+      text-decoration: none; /* Remove underline from the link */
+    }
+
+    /* Hover effect */
+    .car-detail-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .car-detail-card img {
+      width: 100%; 
+      height: 250px; 
+      object-fit: cover; 
+      border-radius: 5px;
+    }
+
+    .car-detail-card h3 {
+      color: #ff0000; 
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    .car-detail-card p {
+      color: #ccc; 
+      font-size: 14px;
+      margin: 0; /* Reset margin for p inside card */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1 class="logo">
+        <a href="index.html">
+          <span class="red">Car</span><span class="white">Hub</span>
+        </a>
+      </h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cars.html" class="active">Cars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="category-content">
+    <h2>Vintage Cars Collection</h2>
+    <p>
+      Step back in time and explore the elegance, engineering, and history of iconic automobiles from the past century. 
+      This section is dedicated to the legends that paved the way for modern driving.
+    </p>
+
+    <div class="vintage-car-listings">
+      
+      <a href="https://www.mercedesclasicos.com/30_mercedes_benz_300sl_w194.html" class="car-detail-card">
+        <img src="assets/vintage/mercedes-300sl.jpg" alt="Mercedes-Benz 300 SL">
+        <h3>Mercedes-Benz 300 SL 'Gullwing'</h3>
+        <p>**Year:** 1954-1963. **Design:** Iconic Gullwing doors. A masterpiece of engineering, the 300 SL was the fastest production car of its time and an enduring symbol of post-war luxury and performance.</p>
+      </a>
+      
+      <a href="https://www.hemmings.com/classifieds/cars-for-sale/dodge/super-bee" class="car-detail-card">
+        <img src="assets/vintage/dodge-super-charger.jpg" alt="Dodge Super Charger Concept">
+        <h3>Dodge Super Charger Concept</h3>
+        <p>**Year:** 2018 (Concept/Homage). **Engine:** Supercharged HEMI V8. A modern interpretation of the muscle car era, showcasing cutting-edge power and aggressive styling, built on the Charger chassis.</p>
+      </a>
+
+      <a href="https://www.dodge.com/2026/charger.html" class="car-detail-card">
+        <img src="assets/vintage/1968-charger-rt.jpg" alt="1968 Dodge Charger R/T">
+        <h3>1968 Dodge Charger R/T</h3>
+        <p>**Era:** Muscle Car Golden Age. **Engine:** 440 Magnum or 426 Hemi. Known for its 'Coke-bottle' styling, recessed grille, and TV fame, the R/T is one of the most recognizable and powerful American classics.</p>
+      </a>
+
+      <a href="https://www.jaguarheritage.com/vehicle-collection/1966-jaguar-xj13/" class="car-detail-card">
+        <img src="assets/vintage/jaguar-xj13.jpg" alt="Jaguar XJ13">
+        <h3>Jaguar XJ13 (Le Mans Prototype)</h3>
+        <p>**Year:** 1966 (Prototype). **Engine:** Mid-mounted V12. A one-of-a-kind race car, built to conquer Le Mans. Though never raced competitively, it is revered as one of the most beautiful and technologically advanced Jaguars ever built.</p>
+      </a>
+
+    </div>
+    
+  </section>
+
+  <footer>
+    <p>© 2025 CarHub | Designed by [RATHORE]</p>
+  </footer>
+
+</body>
+</html>
