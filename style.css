@@ -1,0 +1,248 @@
+/* =========================================================
+   🔧 GLOBAL SETTINGS
+   ========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: white;
+}
+
+/* =========================================================
+   🧭 NAVIGATION BAR SECTION
+   ========================================================= */
+/* ===== NAVIGATION BAR ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: fixed;              /* stays at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+  z-index: 100;
+  backdrop-filter: blur(5px);   /* soft blur for nice effect */
+}
+
+
+/* ----- Logo Styles (Car in Red, Hub in White) ----- */
+.logo a {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo .red {
+  color: #ff0000; /* Car in red */
+}
+
+.logo .white {
+  color: #ffffff; /* Hub in white */
+}
+
+/* Optional Hover Effect for Logo */
+.logo a:hover .red {
+  color: white;
+}
+.logo a:hover .white {
+  color: #ff0000;
+  transition: 0.3s ease;
+}
+
+/* ----- Navigation Links ----- */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e50914;
+}
+
+/* =========================================================
+   🏠 HERO / MAIN PAGE SECTION
+   ========================================================= */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('assets/car.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  padding-top: 100px; /* makes room for navbar */
+}
+
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* =========================================================
+   🔘 BUTTONS
+   ========================================================= */
+.btn {
+  background-color: #e50914;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #b20710;
+}
+
+/* =========================================================
+   🖼️ CARS GALLERY PAGE
+   ========================================================= */
+.gallery {
+  text-align: center;
+  padding: 80px 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('assets/about-bg.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.gallery h2 {
+  font-size: 40px;
+  color: #e50914;
+  margin-bottom: 10px;
+}
+
+.gallery p {
+  color: #ccc;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+/* ----- Car Cards Layout ----- */
+.car-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.car-card {
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.car-card h3 {
+  color: #e50914;
+  margin: 15px 0 10px;
+}
+
+.car-card p {
+  font-size: 15px;
+  color: #ccc;
+  padding: 0 15px 20px;
+}
+
+/* =========================================================
+   💬 CONTACT PAGE
+   ========================================================= */
+.contact-section {
+  background: url('assets/about-bg.jpg') center/cover no-repeat;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.contact-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+}
+
+.contact-container h2 {
+  color: #ff0000;
+  margin-bottom: 15px;
+}
+
+/* ----- Contact Form Styling ----- */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact-form button {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background: white;
+  color: #ff0000;
+  transition: 0.3s;
+}
+
+/* =========================================================
+   ⚓ FOOTER SECTION
+   ========================================================= */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #111;
+  color: #ccc;
+  font-size: 14px;
+}
